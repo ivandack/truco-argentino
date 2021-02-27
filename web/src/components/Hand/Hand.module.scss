@@ -1,0 +1,35 @@
+.hand {
+  display: flex;
+  margin: 20px;
+
+  & div:nth-child(1) {
+    transform: translate(30px) rotate(-15deg);
+    transition: transform 0.2s ease;
+    margin-top: 20px;
+    z-index: 10;
+
+    &:hover {
+      transform: translate(30px) rotate(-15deg) translate(0, -30px);
+    }
+  }
+
+  & div:nth-child(2) {
+    z-index: 11;
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: translate(0, -30px);
+    }
+  }
+
+  & div:nth-child(3) {
+    transform: translate(-30px) rotate(15deg);
+    transition: transform 0.2s ease;
+    margin-top: 20px;
+    z-index: 12;
+
+    &:hover {
+      transform: translate(-30px) rotate(15deg) translate(0, -30px);
+    }
+  }
+}
